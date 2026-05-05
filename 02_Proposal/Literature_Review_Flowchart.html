@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Literature Review Flowchart — BSG Bread with Enzymatic Treatment</title>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<style>
+  body { font-family: "Segoe UI", Arial, sans-serif; margin: 20px; background: #fafafa; color: #222; }
+  h1 { font-size: 20px; margin-bottom: 4px; }
+  h2 { font-size: 15px; color: #555; margin-top: 0; font-weight: 400; }
+  .chart { background: white; border: 1px solid #ddd; border-radius: 6px; padding: 16px; overflow-x: auto; }
+  .legend { margin-top: 16px; font-size: 13px; color: #444; }
+  .legend span { display: inline-block; margin-right: 14px; padding: 2px 8px; border-radius: 4px; }
+  .c1 { background: #e3f2fd; border: 1px solid #64b5f6; }
+  .c2 { background: #fff3e0; border: 1px solid #ffb74d; }
+  .c3 { background: #e8f5e9; border: 1px solid #81c784; }
+  .c4 { background: #fce4ec; border: 1px solid #f06292; }
+  .c5 { background: #f3e5f5; border: 1px solid #ba68c8; }
+  .c6 { background: #fff8e1; border: 1px solid #ffd54f; }
+</style>
+</head>
+<body>
+
+<h1>Literature Review — Conceptual Flowchart</h1>
+<h2>Enzymatic Pre-treatment and Predictive Modeling of BSG-Enriched Bread Formulations</h2>
+
+<div class="legend">
+  <span class="c1">Brewing &amp; Circular Economy</span>
+  <span class="c2">BSG Composition &amp; Health</span>
+  <span class="c3">BSG in Food — Bread Focus</span>
+  <span class="c4">Challenges</span>
+  <span class="c5">Enzymatic Treatment</span>
+  <span class="c6">Predictive Modeling</span>
+</div>
+
+<div class="chart">
+<pre class="mermaid">
+flowchart TD
+
+%% ================= 1. BREWING & CIRCULAR ECONOMY =================
+A[Brewing Process<br/>malting → mashing → lautering → boiling → fermentation]:::c1
+A --> B[By-products<br/>BSG · BMR · Spent Hops · BSY]:::c1
+B --> B1[BSG: ~85–90% of brewing residues<br/>36–39 Mt/year globally · 6.4 Mt/year EU]:::c1
+B --> B2[Current fate<br/>70% animal feed · 10% biogas · 20% landfill]:::c1
+B1 --> C[Motivation for Valorization]:::c1
+B2 --> C
+C --> C1[Circular Economy · EU Green Deal]:::c1
+C --> C2[UN SDGs 12 &amp; 13]:::c1
+
+%% ================= 2. BSG COMPOSITION & HEALTH =================
+B1 --> D[BSG Composition<br/>lignocellulosic matrix]:::c2
+D --> D1[Fiber ~50%<br/>Arabinoxylan · Cellulose · Lignin]:::c2
+D --> D2[Protein 15–31%<br/>hordeins · glutelins · lysine-rich]:::c2
+D --> D3[Phenolics 0.7–2%<br/>ferulic · p-coumaric · sinapic acid]:::c2
+D --> D4[Minerals · Lipids]:::c2
+
+D1 --> E1[Arabinoxylan AX<br/>WE-AX soluble · WU-AX insoluble]:::c2
+E1 --> E1a[WE-AX → prebiotic · SCFAs<br/>glycemic control]:::c2
+E1 --> E1b[WU-AX → bulk · transit<br/>but impairs loaf quality]:::c2
+D1 --> E2[β-glucan → cholesterol-lowering<br/>≥3 g/day EFSA claim]:::c2
+D3 --> E3[Antioxidant · anti-inflammatory<br/>DNA-protective]:::c2
+D2 --> E4[Essential amino acids<br/>satiety · nutrition]:::c2
+
+%% ================= 3. BSG IN FOOD → BREAD =================
+D --> F[BSG as Food Ingredient]:::c3
+F --> F1[Bakery · Cookies · Snacks<br/>Meat analogs · Extracts]:::c3
+F1 --> G[Focus: Bread Enrichment]:::c3
+
+G --> G1[Nutritional Advantages]:::c3
+G1 --> G1a[↑ Protein · ↑ Fiber<br/>↓ Starch · ↑ Minerals]:::c3
+G1 --> G1b[↑ Phenolics · antioxidant capacity]:::c3
+G1 --> G1c[Extended shelf life<br/>delayed mould growth]:::c3
+
+%% ================= 4. CHALLENGES =================
+G --> H[Technological Challenges]:::c4
+H --> H1[High water absorption<br/>OH-groups compete with gluten]:::c4
+H --> H2[Gluten dilution<br/>barley hordeins ≠ gluten network]:::c4
+H --> H3[Coarse particle size<br/>irregular crumb · poor gas retention]:::c4
+H --> H4[Phenolic–protein interactions<br/>inhibit amylase · protease · yeast]:::c4
+H --> H5[Dark color · bitter notes<br/>sensory rejection]:::c4
+
+H1 --> I[Consequence:<br/>↓ loaf volume · dense crumb · firmer texture]:::c4
+H2 --> I
+H3 --> I
+H4 --> I
+
+%% ================= 5. ENZYMATIC TREATMENT =================
+I --> J[Enzymatic Pre-treatment<br/>mitigation strategy]:::c5
+J --> J1[Cellulase<br/>Celluclast® — Trichoderma reesei]:::c5
+J --> J2[Xylanase ★ focus<br/>Pentopan Mono® — A. oryzae/niger]:::c5
+J --> J3[Protease<br/>Alcalase® — B. licheniformis]:::c5
+J --> J4[Lipase<br/>Lipopan Extra]:::c5
+J --> J5[Feruloyl/Acetyl esterases]:::c5
+
+J2 --> K[Xylanase Mechanism<br/>hydrolyzes β-1,4-xylosidic bonds]:::c5
+K --> K1[WU-AX → WE-AX<br/>soluble hydrocolloids]:::c5
+K1 --> K2[Water redistribution<br/>→ gluten hydration · extensibility]:::c5
+K2 --> K3[Stabilized gas cells<br/>↑ loaf volume · softer crumb · uniform pores]:::c5
+K --> K4[Dose-dependent<br/>20–120 ppm · 40–55°C · pH 4.5–6.0]:::c5
+K4 --> K5[Excess dose → gluten weakening]:::c5
+
+%% ================= 6. PREDICTIVE MODELING =================
+K3 --> L[Predictive Modeling<br/>formulation optimization]:::c6
+I --> L
+L --> L1[Response Surface Methodology RSM<br/>2nd-order polynomials · factor interactions]:::c6
+L --> L2[Mixture design<br/>flour · BSG · other components]:::c6
+L --> L3[Machine Learning · ANN<br/>nonlinear interactions]:::c6
+L1 --> M[Identify optimal region<br/>10–20% BSG + 60–100 ppm xylanase]:::c6
+L2 --> M
+L3 --> M
+M --> N[★ Research Gap<br/>No published predictive model for<br/>enzymatically pretreated BSG bread]:::c6
+N --> O[Thesis Contribution<br/>Enzymatic pre-treatment + modeling<br/>→ data-driven sustainable bakery]:::c6
+
+%% ================= STYLES =================
+classDef c1 fill:#e3f2fd,stroke:#1976d2,stroke-width:1.2px,color:#0d47a1;
+classDef c2 fill:#fff3e0,stroke:#f57c00,stroke-width:1.2px,color:#e65100;
+classDef c3 fill:#e8f5e9,stroke:#388e3c,stroke-width:1.2px,color:#1b5e20;
+classDef c4 fill:#fce4ec,stroke:#c2185b,stroke-width:1.2px,color:#880e4f;
+classDef c5 fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1.2px,color:#4a148c;
+classDef c6 fill:#fff8e1,stroke:#f9a825,stroke-width:1.5px,color:#e65100;
+
+</pre>
+</div>
+
+<script>
+  mermaid.initialize({ startOnLoad: true, theme: 'default', flowchart: { curve: 'basis', padding: 12 } });
+</script>
+
+</body>
+</html>

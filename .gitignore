@@ -1,0 +1,15 @@
+# Local tooling
+.claude/
+
+# Excluded from public repo (copyrighted research papers)
+01_Art_State/
+
+# OS junk
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# Office temp/lock files
+~$*
+*.tmp
