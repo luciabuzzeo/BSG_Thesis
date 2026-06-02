@@ -1,0 +1,168 @@
+================================================================================
+CITATIONS TO MANUALLY VERIFY — Results_Discussion_ThesisSection (3) (1).docx
+Generated: 2026-06-02
+================================================================================
+
+This file lists the in-text citations in your Results & Discussion section,
+graded by how confident the web verification was. Focus your manual checking
+on PRIORITY 1 (highest hallucination risk), then PRIORITY 2.
+
+PRIORITY 3 citations were fully verified against real publications and are very
+likely fine — listed at the end only for completeness.
+
+--------------------------------------------------------------------------------
+PRIORITY 1 — HIGH RISK: could NOT confirm the exact paper. CHECK THESE FIRST.
+--------------------------------------------------------------------------------
+
+[ ] Grandal et al. (2021)
+    Used in: §6.2 (pre-treatment justification — "xylanase treatment
+             significantly reduced bread hardness and increased specific loaf
+             volume compared to direct addition").
+    Problem: No paper found by an author "Grandal" (2021) on xylanase
+             pre-treatment of wheat bran / BSG. A real 2021 paper exists on
+             Intermediate Wheatgrass bran pre-treatment with endoxylanase, but
+             by DIFFERENT authors.
+    Action:  Find the original reference in your own library, OR replace with
+             the Intermediate Wheatgrass endoxylanase paper, OR remove.
+
+[ ] Koistinen et al. (2020)
+    Used in: §8.3 ("the free-phenolic pool of BSG side-streams becomes
+             sensorially detectable once a critical degree of fibre
+             depolymerisation is exceeded").
+    Problem: No Koistinen 2020 BSG-phenolics paper found. The closest real 2020
+             paper on BSG bioprocessing + phenolics is by VERNI et al.
+             (Frontiers in Microbiology 11:1831, 2020).
+    Action:  Likely replace with Verni et al. (2020), OR confirm Koistinen from
+             your own records.
+
+[ ] Pereira et al. (2021)
+    Used in: §8.1 ("...the boundary reported by ... Pereira et al. (2021) for
+             BSG breads" — the 10-15% acceptance threshold).
+    Problem: No Pereira 2021 BSG-bread sensory paper found. "Pereira de Freitas"
+             papers exist but are from 2023 and 2024, not 2021.
+    Action:  Check year/authors. May need to change to Pereira de Freitas
+             (2024), OR confirm from your own records.
+
+[ ] McCarthy et al. (2012)
+    Used in: §6.1 ("Literature supports sieving as a mitigation strategy for
+             fiber-enriched breads (Lynch et al., 2016; McCarthy et al., 2012)").
+    Problem: Multiple McCarthy 2012 BSG papers exist (BSG phenolic extracts;
+             consumer acceptability of BSG bakery products), but NONE clearly
+             support the specific claim about "sieving as a mitigation strategy."
+    Action:  Confirm which McCarthy 2012 paper you intended and that it actually
+             discusses particle-size/sieving.
+
+[ ] Foschia et al. (2013)
+    Used in: §8.2 ("Foschia et al. ... identify particle-size reduction as one
+             of the most effective mitigation strategies for sensory penalties
+             in fibre-enriched cereal products").
+    Problem: Foschia has real 2013 fibre/dough work, but the SPECIFIC paper
+             backing the "particle-size reduction" claim could not be located.
+             (A well-known Foschia 2013 paper is about inulin/dough rheology, a
+             different topic.)
+    Action:  Confirm the exact Foschia 2013 paper and that it supports the
+             particle-size claim.
+
+--------------------------------------------------------------------------------
+PRIORITY 2 — MEDIUM RISK: real paper exists, but YEAR or AUTHOR LIST is off.
+--------------------------------------------------------------------------------
+
+[ ] Farcas et al. (2017)   -->  probably should be 2014
+    Real paper: Farcas, A.C., Tofana, M., Socaci, S.A., Muresan, C., Mudura, E.,
+                Salanta, L. "Nutritional properties and volatile profile of
+                brewer's spent grain supplemented bread."
+                Romanian Biotechnology Letters, 2014 (NOT 2017).
+    Used in: §1.2 (BSG mineral source — silicon, phosphorus, calcium,
+             magnesium).
+    Action:  Change year 2017 -> 2014 (verify against your own copy).
+
+[ ] Amoriello, Ciccoritti and Ferrante (2020)  -->  author list likely wrong
+    Real paper: Amoriello, T., Mellara, F., Galli, V., Amoriello, M.,
+                Ciccoritti, R. "Technological Properties and Consumer
+                Acceptability of Bakery Products Enriched with Brewers' Spent
+                Grains." Foods 2020, 9(10), 1492.
+    Used in: §8.1 (10-15% acceptance threshold for BSG biscuits).
+    Problem: Co-author "Ferrante" could NOT be confirmed; the verified author
+             list is Amoriello, Mellara, Galli, Amoriello & Ciccoritti.
+    Action:  Correct the author list (verify against your own copy).
+
+[ ] Liu et al. (2023)   -->  confirm authors & topic match
+    Likely paper: Liu, W., Brennan, M., Tu, D., Brennan, C. "Influence of
+                  alpha-amylase, xylanase and cellulase on the rheological
+                  properties of bread dough enriched with oat bran."
+                  Scientific Reports, 2023.
+    Used in: §2.1 and §7.5 (xylanase dosage-response on dough rheology /
+             volume gain).
+    Problem: Real paper exists and topic fits, but it is about OAT BRAN, not a
+             generic "cereal dough multi-enzyme cocktail." Confirm this is the
+             paper you meant.
+    Action:  Verify authors and that the oat-bran context fits your claims.
+
+[ ] Pang et al. (2021)   -->  confirm topic match
+    Real paper: Pang, J., et al. "Effects of wheat flour particle size on flour
+                physicochemical properties and steamed bread quality."
+                Food Science & Nutrition, 2021.
+    Used in: §7.5 and §9.x (fine fibre particles increase water competition).
+    Problem: The real Pang 2021 paper is about WHEAT-FLOUR PARTICLE SIZE and
+             STEAMED BREAD, not wheat-bran fractionation per se. Confirm the
+             framing matches.
+    Action:  Verify the paper supports your specific statement.
+
+[ ] Ktenioudaki, Alvarez-Jubete and Gallagher (2015)  -->  topic mismatch
+    Real paper: "A Review of the Process-Induced Changes in the Phytochemical
+                Content of Cereal Grains: The Breadmaking Process."
+                Critical Reviews in Food Science and Nutrition, 2015, 55(5),
+                611-619.
+    Used in: §8.2 ("consumer acceptance of BSG-enriched baked snacks improved
+             when coarse particles were removed... reduced gritty mouthfeel").
+    Problem: The verified 2015 paper is a PHYTOCHEMICAL review, NOT about BSG
+             snack sensory acceptance / particle removal. The citation is real
+             but may NOT support the specific claim. (You may be thinking of the
+             2012 Ktenioudaki "Brewer's spent grain as a functional ingredient
+             for breadsticks" paper instead.)
+    Action:  Decide whether you meant the 2012 breadsticks paper; fix
+             accordingly.
+
+--------------------------------------------------------------------------------
+MINOR WORDING NOTE (not a hallucination, just a title precision issue)
+--------------------------------------------------------------------------------
+
+[ ] Zghal, Scanlon and Sapirstein (1999)
+    The real paper title is "Prediction of Bread Crumb DENSITY by Digital Image
+    Analysis" (Cereal Chemistry, 1999). The paper is REAL and correctly
+    attributed; just be aware it is framed around density, and your text uses it
+    for "porosity." Content is closely related, so this is low concern.
+
+--------------------------------------------------------------------------------
+PRIORITY 3 — VERIFIED OK (real paper, correct authors/year/topic). No action.
+--------------------------------------------------------------------------------
+
+[OK] Mariotti, Tome & Mirand (2008) - Crit Rev Food Sci Nutr 48:177-184.
+     (N x 6.25 conversion factor; the new protein-justification citation.)
+[OK] Connolly, Piggott & FitzGerald (2013) - Int J Food Sci Tech 48(8):1670-1681.
+     (BSG protein extractability; the new protein-justification citation.)
+[OK] Lynch, Steffen & Arendt (2016) - J Inst Brewing 122:553-568.
+[OK] Waters, Jacob, Titze, Arendt & Zannini (2012) - Eur Food Res Tech 235:767-778.
+[OK] Stojceska & Ainsworth (2008) - Food Chemistry 110(4):865-872.
+[OK] Robertson, I'Anson, Treimo et al. (2010) - LWT 43:890-896.
+[OK] Noort, van Haaster, Hemery, Schols & Hamer (2010) - J Cereal Sci 52(1):59-64.
+[OK] Lassoued, Babin, Della Valle, Devaux & Reguerre (2007) - Food Res Int.
+[OK] Scanlon & Zghal (2001) - Food Res Int 34:841-864.
+[OK] Gonzales-Barron & Butler (2006) - J Food Eng (7-thresholding-techniques paper).
+[OK] Heinio, Liukkonen, Myllymaki, Pihlava et al. (2008) - J Cereal Sci 47(3):566-575.
+[OK] Perez-Alva et al. (2025) - ScienceDirect BSG leavened bread review.
+[OK] Ruderman, Howell & Appels (2025) - "Digital image analysis to assess the
+     texture of bread products," ScienceDirect 2025.
+
+================================================================================
+SUMMARY
+================================================================================
+  Priority 1 (find/replace/confirm):  5  -> Grandal, Koistinen, Pereira,
+                                            McCarthy, Foschia
+  Priority 2 (fix year/authors/topic): 5 -> Farcas(year), Amoriello(authors),
+                                            Liu(confirm), Pang(confirm),
+                                            Ktenioudaki(topic)
+  Priority 3 (verified OK):           13
+
+  Total in-text citations reviewed:   ~23 unique sources.
+================================================================================
