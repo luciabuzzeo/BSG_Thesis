@@ -14,7 +14,7 @@ likely fine — listed at the end only for completeness.
 PRIORITY 1 — HIGH RISK: could NOT confirm the exact paper. CHECK THESE FIRST.
 --------------------------------------------------------------------------------
 
-[ ] Grandal et al. (2021)
+[ ] Grandal et al. (2021) REMOVE
     Used in: §6.2 (pre-treatment justification — "xylanase treatment
              significantly reduced bread hardness and increased specific loaf
              volume compared to direct addition").
@@ -35,7 +35,7 @@ PRIORITY 1 — HIGH RISK: could NOT confirm the exact paper. CHECK THESE FIRST.
     Action:  Likely replace with Verni et al. (2020), OR confirm Koistinen from
              your own records.
 
-[ ] Pereira et al. (2021)
+[ ] Pereira et al. (2021) REMOVE
     Used in: §8.1 ("...the boundary reported by ... Pereira et al. (2021) for
              BSG breads" — the 10-15% acceptance threshold).
     Problem: No Pereira 2021 BSG-bread sensory paper found. "Pereira de Freitas"
@@ -43,7 +43,7 @@ PRIORITY 1 — HIGH RISK: could NOT confirm the exact paper. CHECK THESE FIRST.
     Action:  Check year/authors. May need to change to Pereira de Freitas
              (2024), OR confirm from your own records.
 
-[ ] McCarthy et al. (2012)
+[ ] McCarthy et al. (2012) REMOVE
     Used in: §6.1 ("Literature supports sieving as a mitigation strategy for
              fiber-enriched breads (Lynch et al., 2016; McCarthy et al., 2012)").
     Problem: Multiple McCarthy 2012 BSG papers exist (BSG phenolic extracts;
@@ -52,7 +52,7 @@ PRIORITY 1 — HIGH RISK: could NOT confirm the exact paper. CHECK THESE FIRST.
     Action:  Confirm which McCarthy 2012 paper you intended and that it actually
              discusses particle-size/sieving.
 
-[ ] Foschia et al. (2013)
+[ ] Foschia et al. (2013) REMOVE
     Used in: §8.2 ("Foschia et al. ... identify particle-size reduction as one
              of the most effective mitigation strategies for sensory penalties
              in fibre-enriched cereal products").
@@ -76,7 +76,7 @@ PRIORITY 2 — MEDIUM RISK: real paper exists, but YEAR or AUTHOR LIST is off.
              magnesium).
     Action:  Change year 2017 -> 2014 (verify against your own copy).
 
-[ ] Amoriello, Ciccoritti and Ferrante (2020)  -->  author list likely wrong
+[ ] Amoriello, Ciccoritti and Ferrante (2020)  -->  author list likely wrong  -- REMOVE
     Real paper: Amoriello, T., Mellara, F., Galli, V., Amoriello, M.,
                 Ciccoritti, R. "Technological Properties and Consumer
                 Acceptability of Bakery Products Enriched with Brewers' Spent
@@ -86,7 +86,7 @@ PRIORITY 2 — MEDIUM RISK: real paper exists, but YEAR or AUTHOR LIST is off.
              list is Amoriello, Mellara, Galli, Amoriello & Ciccoritti.
     Action:  Correct the author list (verify against your own copy).
 
-[ ] Liu et al. (2023)   -->  confirm authors & topic match
+[ ] Liu et al. (2023)   -->  confirm authors & topic match --- I CONFIRM THIS IS THE PAPER i MEANT , UPDATE SOURCE NAME IF NECCESARY
     Likely paper: Liu, W., Brennan, M., Tu, D., Brennan, C. "Influence of
                   alpha-amylase, xylanase and cellulase on the rheological
                   properties of bread dough enriched with oat bran."
@@ -95,10 +95,10 @@ PRIORITY 2 — MEDIUM RISK: real paper exists, but YEAR or AUTHOR LIST is off.
              volume gain).
     Problem: Real paper exists and topic fits, but it is about OAT BRAN, not a
              generic "cereal dough multi-enzyme cocktail." Confirm this is the
-             paper you meant.
+             paper you meant. .
     Action:  Verify authors and that the oat-bran context fits your claims.
 
-[ ] Pang et al. (2021)   -->  confirm topic match
+[ ] Pang et al. (2021)   -->  confirm topic match -- CONFIRM MATCH AND NEED TO UPDATE SOURCE
     Real paper: Pang, J., et al. "Effects of wheat flour particle size on flour
                 physicochemical properties and steamed bread quality."
                 Food Science & Nutrition, 2021.
@@ -108,7 +108,7 @@ PRIORITY 2 — MEDIUM RISK: real paper exists, but YEAR or AUTHOR LIST is off.
              framing matches.
     Action:  Verify the paper supports your specific statement.
 
-[ ] Ktenioudaki, Alvarez-Jubete and Gallagher (2015)  -->  topic mismatch
+[ ] Ktenioudaki, Alvarez-Jubete and Gallagher (2015)  -->  REMOVE
     Real paper: "A Review of the Process-Induced Changes in the Phytochemical
                 Content of Cereal Grains: The Breadmaking Process."
                 Critical Reviews in Food Science and Nutrition, 2015, 55(5),
@@ -127,7 +127,7 @@ PRIORITY 2 — MEDIUM RISK: real paper exists, but YEAR or AUTHOR LIST is off.
 MINOR WORDING NOTE (not a hallucination, just a title precision issue)
 --------------------------------------------------------------------------------
 
-[ ] Zghal, Scanlon and Sapirstein (1999)
+[ ] Zghal, Scanlon and Sapirstein (1999)-- KEEP THE SAME ,UPDATE SOURCE NAME TO MATCH CORRECT PAPER NAME IF NEEDED 
     The real paper title is "Prediction of Bread Crumb DENSITY by Digital Image
     Analysis" (Cereal Chemistry, 1999). The paper is REAL and correctly
     attributed; just be aware it is framed around density, and your text uses it
