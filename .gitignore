@@ -13,3 +13,7 @@ Desktop.ini
 # Office temp/lock files
 ~$*
 *.tmp
+
+# Working archives / oversized artifacts
+02_Proposal/old/
+02_Proposal/build/
