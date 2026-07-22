@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Answers to Opponent’s Questions</title>
+<style>
+  :root{--bg:#f7f6f3;--card:#fff;--ink:#1c1b19;--muted:#6b6760;--line:#e4e0d8;
+    --accent:#7a5c1e;--accent2:#3c6b47;--band:#2f2b25;--chip:#efe9dc;--warn:#8a5a1a;
+    --shadow:0 1px 2px rgba(0,0,0,.06),0 8px 24px rgba(0,0,0,.05);}
+  @media (prefers-color-scheme:dark){:root{--bg:#17150f;--card:#201d16;--ink:#f0ece2;
+    --muted:#a49d8e;--line:#332e24;--accent:#d8b25a;--accent2:#7fbb8d;--band:#efe9dc;
+    --chip:#2a2519;--warn:#e0b060;--shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.4);}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;padding:0 0 5rem}
+  .wrap{max-width:900px;margin:0 auto;padding:0 1.25rem}
+  header.hero{background:var(--band);color:var(--bg);padding:2.4rem 0 2rem;margin-bottom:1.8rem}
+  @media (prefers-color-scheme:dark){header.hero{color:#17150f}}
+  .eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:.72rem;font-weight:700;opacity:.75;margin:0 0 .5rem}
+  h1{font-size:1.8rem;line-height:1.15;margin:.1rem 0 .5rem;font-weight:800}
+  .sub{font-size:.98rem;opacity:.85;margin:0;max-width:64ch}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);
+    padding:1.15rem 1.25rem 1.3rem;margin:0 0 1.15rem}
+  .card h2{margin:0;font-size:1.12rem;font-weight:750;display:flex;align-items:center;gap:.6rem;flex-wrap:wrap}
+  .q{color:var(--accent);font-weight:800;flex:none}
+  .count{margin-left:auto;font-size:.74rem;font-weight:700;font-variant-numeric:tabular-nums;
+    background:var(--chip);color:var(--muted);border-radius:999px;padding:.2rem .6rem;white-space:nowrap}
+  .count.ok{color:var(--accent2)}
+  .copy{font:inherit;font-size:.74rem;font-weight:700;cursor:pointer;border:1px solid var(--line);
+    background:transparent;color:var(--muted);border-radius:8px;padding:.25rem .6rem}
+  .copy:hover{color:var(--ink);border-color:var(--accent)}
+  .body{margin:.7rem 0 0;white-space:pre-wrap}
+  .body p{margin:0 0 .7rem}
+  .body p:last-child{margin-bottom:0}
+  ul{margin:.5rem 0 0;padding-left:1.2rem}
+  li{margin:.3rem 0}
+  .flag{background:var(--chip);border-left:3px solid var(--warn);border-radius:6px;padding:.5rem .75rem;
+    font-size:.85rem;color:var(--ink);margin:.2rem 0 1.1rem}
+  .qtext{font-weight:750;font-size:1.04rem;margin:0;display:flex;gap:.55rem;align-items:baseline}
+  .qtext .n{color:#fff;background:var(--accent);border-radius:7px;font-size:.78rem;font-weight:800;
+    padding:.15rem .5rem;flex:none}
+  @media (prefers-color-scheme:dark){.qtext .n{color:#17150f}}
+  footer{color:var(--muted);font-size:.78rem;margin-top:2rem;text-align:center}
+  @media print{body{background:#fff;color:#000;padding:0}header.hero{background:#000;color:#fff}
+    .card{box-shadow:none;break-inside:avoid}.copy{display:none}}
+</style></head><body>
+<header class="hero"><div class="wrap">
+  <p class="eyebrow">Diploma Defense 2026 · Opponent Review</p>
+  <h1>Answers to the Opponent’s Questions</h1>
+  <p class="sub">Responses grounded strictly in the thesis. Where a claim is an interpretation rather
+  than a directly measured result, this is stated explicitly.</p>
+</div></header>
+<div class="wrap">
+  <div class="flag"><b>Note on honesty of scope:</b> the thesis is an exploratory, screening-stage
+  study. Two answers below (Q4 on phenolics, Q5 on cross-device reproducibility) make clear what was
+  measured versus interpreted or not tested — this is deliberate and defensible.</div>
+
+  <section class="card">
+    <p class="qtext"><span class="n">Q1</span><span>Why wasn’t a statistical analysis of the significance of the results (ANOVA, Tukey test) used?</span></p>
+    <div class="body"><p>This was a deliberate, disclosed choice tied to the study’s design, stated explicitly in the Statistical analysis section. The work was exploratory and screening in nature, with low replication: compositional determinations were run in duplicate (n = 2), digital-image-analysis metrics on three crumb cross-sections per formulation (n = 3), and sensory evaluation by an eight-member trained panel (n = 8). With so few replicates, the assumptions underlying parametric ANOVA and Tukey post-hoc testing — adequate replication, approximately normal residuals and homogeneous variances — are not reliably met, and formal p-values would convey a false sense of precision.</p><p>Results were therefore reported as mean ± SD, with the coefficient of variation expressing dispersion, and differences between closely scored formulations were interpreted as indicative rather than statistically significant. Digital image analysis (BreadScan) was introduced precisely to add an objective, reproducible axis of comparison that does not depend on panel size. A properly powered confirmatory study — more baking and analytical replicates, a larger panel, and ANOVA with Tukey (or non-parametric equivalents where distributional assumptions fail) — is the logical validation step and is acknowledged as future work.</p></div>
+  </section>
+  <section class="card">
+    <p class="qtext"><span class="n">Q2</span><span>How do you explain the very high coefficients of variation in the sensory results (up to 77.6%), and to what extent do they affect the reliability of the conclusions?</span></p>
+    <div class="body"><p>The high CVs are real, and they are concentrated in the formulations that were rejected on their mean scores — not in the ones the conclusions rest on. Control and 10% breads showed low variability (CV ≈ 10–11%), and the best formulation, 10% sieved BSG + 70 ppm xylanase, had the lowest variability of the whole study (SD 8.02; CV 9.4%), indicating strong panel consensus. The extreme values — 61.1% for 20% unsieved BSG, and 25.6% and 77.6% for the 10% and 20% enzyme-treated unsieved breads — all belong to low-acceptance samples.</p><p>They reflect polarised responses: panellists differ in sensitivity to the bitterness and astringency of freed phenolics and to the gritty texture of coarse husk, so some reject these breads strongly while others tolerate them. This heterogeneity is itself informative and is one reason DIA was added as an operator-independent measure. It does not undermine the central conclusion: the leading formulation is supported by high-consensus, low-CV data, and the high-CV samples fail on the mean regardless of their spread. The genuine caveat is the small panel (n = 8), which limits power to separate closely scored formulations — a limitation stated in the thesis and addressed by proposing a larger panel.</p></div>
+  </section>
+  <section class="card">
+    <p class="qtext"><span class="n">Q3</span><span>How do you explain the near-zero fiber values in some samples with fractionated BSG?</span></p>
+    <div class="body"><p>There are two combined reasons, both discussed in the Batch 2 fibre-content section. First, a genuine compositional effect: the near-zero values belong to the sieved ≤250 µm fraction, and sieving deliberately removes the coarse (&gt;250 µm) husk and pericarp that concentrate the cellulose and lignin the crude-fibre assay actually detects. Removing that fraction removes most of what the method measures — the 20% sieved formulations fell to 0.59% and 0.14% versus 1.79% and 1.43% for their unsieved counterparts.</p><p>Second, an analytical limitation: AOAC 962.09 crude fibre captures predominantly insoluble cellulose and lignin and is blind to the soluble arabinoxylan-derived fibre that is enriched in the fine fraction and released by xylanase; several 10% Batch-2 values also sat at or below the practical detection limit of the gravimetric method, exaggerating the apparent drop. So the near-zero readings do not mean the bread lacks dietary fibre — the measured (insoluble) fraction has largely been removed while the soluble fraction is not captured. The thesis states plainly that the sieved bread, though sensorially superior, no longer qualifies as ‘high-fibre’ on crude-fibre grounds, and that a soluble/insoluble dietary-fibre profile is needed to quantify the true contribution.</p></div>
+  </section>
+  <section class="card">
+    <p class="qtext"><span class="n">Q4</span><span>Based on what experimental evidence do you conclude that the deterioration in sensory properties after xylanase application is related to the release of phenolic compounds?</span></p>
+    <div class="body"><p>To be clear, free phenolic compounds were not measured directly in this work, so the attribution is a mechanistic interpretation rather than a directly demonstrated result, and the thesis presents it as such. It rests on three lines of indirect evidence. First, the dose-response pattern: raising xylanase from 70 to 140 ppm improved sensory acceptance where arabinoxylan substrate was abundant (20% unsieved BSG) but worsened it where substrate was limited (10% BSG, and the arabinoxylan-depleted fine fraction) — the non-monotonic behaviour expected if excess hydrolysis liberates bitter, astringent compounds once the technological benefit saturates.</p><p>Second, the literature cited in the thesis (e.g. Heiniö et al., 2008) shows that xylanase hydrolysis of arabinoxylan liberates esterified ferulic and p-coumaric acids — more bitter and astringent in free form — together with reducing sugars that drive Maillard off-flavours. Third, and importantly, the thesis does not claim phenolics are the sole cause: xylanase leaves the cellulose-rich coarse husk untouched, and the sensory penalty was reversed by particle-size fractionation rather than by adjusting the enzyme, pointing to a large physical (gritty) component. The phenolic mechanism is therefore one contributing hypothesis, and direct quantification of free phenolics and reducing sugars is explicitly proposed as future work to confirm it.</p></div>
+  </section>
+  <section class="card">
+    <p class="qtext"><span class="n">Q5</span><span>What is the reproducibility of the BreadScan method when analyzing images captured by a different device?</span></p>
+    <div class="body"><p>Cross-device reproducibility was not formally tested in this thesis, so I cannot report a between-device coefficient; within-study repeatability was assessed with three crumb cross-sections per formulation (n = 3), with standard deviations reported. That said, BreadScan was deliberately designed to minimise device dependence. It works in physical rather than pixel units: every image is spatially calibrated (pixels per millimetre) from a reference object of known size in the frame — a ruler or coin — and the region of interest is re-rendered at a fixed working resolution of 10 px/mm, so the thresholding window and the morphological structuring element always correspond to the same physical size regardless of camera or resolution.</p><p>Colour differences are reduced by conversion to a luminance-weighted greyscale (ITU-R BT.601), and segmentation is bread-type-adaptive (Sauvola for light crumb; peak-mode thresholding with CLAHE bypassed for dark BSG crumb), which limits sensitivity to absolute brightness. The main residual source of between-device variation is illumination geometry and white balance at capture, which is why a standardised flat, diffuse lighting set-up is recommended. A formal multi-device round-robin — the same slices photographed on different cameras and phones and compared against a scanner reference — is the appropriate validation step and is acknowledged as future work.</p></div>
+  </section>
+  <footer>Prepared for defense rehearsal · content sourced from BSGThesis_Combined.</footer>
+</div>
+</body></html>

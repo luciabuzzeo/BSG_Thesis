@@ -1,316 +1,173 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
+<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BSG Thesis Defense — Speaker Guide</title>
-<style>
-  :root{
-    --bg:#f7f6f3; --card:#ffffff; --ink:#1c1b19; --muted:#6b6760;
-    --line:#e4e0d8; --accent:#7a5c1e; --accent2:#3c6b47; --band:#2f2b25;
-    --chip:#efe9dc; --shadow:0 1px 2px rgba(0,0,0,.06),0 8px 24px rgba(0,0,0,.05);
-  }
-  @media (prefers-color-scheme: dark){
-    :root{--bg:#17150f;--card:#201d16;--ink:#f0ece2;--muted:#a49d8e;
-      --line:#332e24;--accent:#d8b25a;--accent2:#7fbb8d;--band:#efe9dc;--chip:#2a2519;
-      --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.4);}
-  }
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--ink);
-    font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    -webkit-font-smoothing:antialiased;padding:0 0 6rem}
-  .wrap{max-width:900px;margin:0 auto;padding:0 1.25rem}
-  header.hero{background:var(--band);color:var(--bg);padding:2.6rem 0 2.2rem;margin-bottom:2rem}
-  @media (prefers-color-scheme: dark){header.hero{color:#17150f}}
-  header.hero .wrap{display:block}
-  .eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:.72rem;font-weight:700;
-    opacity:.75;margin:0 0 .5rem}
-  h1{font-size:1.9rem;line-height:1.15;margin:.1rem 0 .6rem;font-weight:800}
-  .sub{font-size:1rem;opacity:.85;margin:0;max-width:60ch}
-  .meta{margin-top:1.1rem;display:flex;gap:.5rem;flex-wrap:wrap}
-  .meta .chip{background:rgba(255,255,255,.14);border-radius:999px;padding:.25rem .7rem;
-    font-size:.78rem;font-weight:600}
-  @media (prefers-color-scheme: dark){.meta .chip{background:rgba(0,0,0,.15)}}
-  h2.section{display:flex;align-items:baseline;gap:.6rem;margin:2.4rem 0 1rem;
-    font-size:1.28rem;font-weight:800;border-bottom:2px solid var(--line);padding-bottom:.5rem}
-  h2.section .num{color:var(--accent);font-size:.9rem;font-weight:800}
-  h2.section .time{margin-left:auto;font-size:.78rem;font-weight:700;color:var(--muted)}
-  .goal{background:var(--chip);border-left:3px solid var(--accent);border-radius:6px;
-    padding:.7rem .9rem;font-size:.9rem;color:var(--ink);margin:0 0 1.1rem;font-style:italic}
-  .slide{background:var(--card);border:1px solid var(--line);border-radius:12px;
-    box-shadow:var(--shadow);padding:1.1rem 1.2rem;margin:0 0 1rem}
-  .slide h3{margin:0 0 .1rem;font-size:1.05rem;font-weight:750;display:flex;align-items:baseline;gap:.5rem}
-  .slide h3 .sn{background:var(--accent);color:#fff;border-radius:6px;font-size:.72rem;
-    font-weight:800;padding:.12rem .45rem;flex:none}
-  @media (prefers-color-scheme: dark){.slide h3 .sn{color:#17150f}}
-  .slide h3 .t{margin-left:auto;font-size:.74rem;font-weight:700;color:var(--muted);flex:none}
-  .lbl{font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;
-    color:var(--accent2);margin:.7rem 0 .2rem}
-  ul{margin:.15rem 0 .2rem;padding-left:1.15rem}
-  li{margin:.22rem 0}
-  .say em,.punch{background:linear-gradient(transparent 60%,rgba(122,92,30,.22) 0);font-style:normal;font-weight:650}
-  @media (prefers-color-scheme: dark){.say em,.punch{background:linear-gradient(transparent 60%,rgba(216,178,90,.28) 0)}}
-  table.budget{width:100%;border-collapse:collapse;margin:.4rem 0 0;font-size:.86rem}
-  table.budget th,table.budget td{text-align:left;padding:.4rem .5rem;border-bottom:1px solid var(--line)}
-  table.budget th{color:var(--muted);font-weight:700;font-size:.72rem;text-transform:uppercase;letter-spacing:.05em}
-  table.budget td.tm{text-align:right;font-variant-numeric:tabular-nums;color:var(--accent);font-weight:700;white-space:nowrap}
-  .note{background:var(--chip);border-radius:10px;padding:1rem 1.15rem;margin:1.6rem 0 0;font-size:.9rem}
-  .note b{color:var(--accent2)}
-  footer{color:var(--muted);font-size:.78rem;margin-top:2.4rem;text-align:center}
-  @media print{
-    body{background:#fff;color:#000;padding:0}
-    header.hero{background:#000;color:#fff}
-    .slide{box-shadow:none;break-inside:avoid}
-    h2.section{break-after:avoid}
-  }
-</style>
-</head>
-<body>
-
-<header class="hero">
-  <div class="wrap">
-    <p class="eyebrow">Diploma Thesis · Defense 2026</p>
-    <h1>Speaker Guide — Slide-by-Slide Content Plan</h1>
-    <p class="sub">Application of malting &amp; brewing by-products into cereal-based products:
-      enzymatic treatment, particle-size fractionation and digital image analysis of BSG-enriched wheat bread.</p>
-    <div class="meta">
-      <span class="chip">⏱ 15-minute defense</span>
-      <span class="chip">17 slides</span>
-      <span class="chip">Author: Lucia Buzzeo</span>
-      <span class="chip">Supervisor: Ing. Miriam Solgajová, PhD.</span>
-    </div>
-  </div>
-</header>
-
+<title>BSG Thesis Defense — Speaker Guide</title><style>
+ :root{--bg:#f7f6f3;--card:#fff;--ink:#1c1b19;--muted:#6b6760;--line:#e4e0d8;
+  --accent:#9E2736;--accent2:#3c6b47;--band:#2f2b25;--chip:#efe9dc;--blue:#4472C4;
+  --shadow:0 1px 2px rgba(0,0,0,.06),0 8px 24px rgba(0,0,0,.05);}
+ @media (prefers-color-scheme:dark){:root{--bg:#17150f;--card:#201d16;--ink:#f0ece2;--muted:#a49d8e;
+  --line:#332e24;--accent:#d8788a;--accent2:#7fbb8d;--band:#efe9dc;--chip:#2a2519;--blue:#8fb0e8;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.4);}}
+ *{box-sizing:border-box}
+ body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;padding:0 0 6rem}
+ .wrap{max-width:940px;margin:0 auto;padding:0 1.25rem}
+ header.hero{background:var(--band);color:var(--bg);padding:2.6rem 0 2.2rem;margin-bottom:2rem}
+ @media (prefers-color-scheme:dark){header.hero{color:#17150f}}
+ .eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:.72rem;font-weight:700;opacity:.75;margin:0 0 .5rem}
+ h1{font-size:1.9rem;line-height:1.15;margin:.1rem 0 .6rem;font-weight:800}
+ .sub{font-size:1rem;opacity:.85;margin:0;max-width:62ch}
+ .meta{margin-top:1.1rem;display:flex;gap:.5rem;flex-wrap:wrap}
+ .meta .chip{background:rgba(255,255,255,.14);border-radius:999px;padding:.25rem .7rem;font-size:.78rem;font-weight:600}
+ @media (prefers-color-scheme:dark){.meta .chip{background:rgba(0,0,0,.15)}}
+ h2.section{display:flex;align-items:baseline;gap:.6rem;margin:2.4rem 0 1rem;font-size:1.28rem;font-weight:800;
+  border-bottom:2px solid var(--line);padding-bottom:.5rem}
+ h2.section .num{color:var(--accent);font-size:.9rem;font-weight:800}
+ h2.section .time{margin-left:auto;font-size:.78rem;font-weight:700;color:var(--muted)}
+ .goal{background:var(--chip);border-left:3px solid var(--accent);border-radius:6px;padding:.7rem .9rem;
+  font-size:.9rem;font-style:italic;margin:0 0 1.1rem}
+ .slide{background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);
+  padding:1.1rem 1.2rem 1.25rem;margin:0 0 1rem}
+ .slide h3{margin:0 0 .5rem;font-size:1.05rem;font-weight:750;display:flex;align-items:baseline;gap:.5rem}
+ .slide h3 .sn{background:var(--accent);color:#fff;border-radius:6px;font-size:.72rem;font-weight:800;padding:.12rem .45rem;flex:none}
+ .slide h3 .t{margin-left:auto;font-size:.74rem;font-weight:700;color:var(--muted);flex:none}
+ .blk{margin:.55rem 0 0}
+ .lbl{font-size:.68rem;letter-spacing:.07em;text-transform:uppercase;font-weight:800;margin:0 0 .25rem}
+ .lbl.g{color:var(--blue)} .lbl.b{color:var(--accent)} .lbl.s{color:var(--accent2)}
+ ul{margin:.1rem 0 0;padding-left:1.15rem} li{margin:.2rem 0}
+ .body-txt li{color:var(--ink)}
+ .body-txt{background:var(--chip);border-radius:8px;padding:.55rem .8rem .6rem}
+ .note{background:var(--chip);border-radius:10px;padding:1rem 1.15rem;margin:1.6rem 0 0;font-size:.9rem}
+ .note b{color:var(--accent2)}
+ footer{color:var(--muted);font-size:.78rem;margin-top:2.4rem;text-align:center}
+ @media print{body{background:#fff;color:#000;padding:0}header.hero{background:#000;color:#fff}
+  .slide{box-shadow:none;break-inside:avoid}h2.section{break-after:avoid}}
+</style></head><body>
+<header class="hero"><div class="wrap">
+ <p class="eyebrow">Diploma Thesis · Defense 2026 · SUA·FBFS deck</p>
+ <h1>Speaker Guide — Slide-by-Slide Content Plan</h1>
+ <p class="sub">For <b>Buzzeo_Defense_2026_SUA.pptx</b> (16 slides, SUA·FBFS template). Each slide lists
+ the <b>graphics/tables</b> on it, the <b>exact on-slide body text</b>, and <b>what to address</b> aloud.</p>
+ <div class="meta"><span class="chip">⏱ 15-minute defense</span><span class="chip">16 slides</span>
+ <span class="chip">Author: Lucia Buzzeo</span><span class="chip">Supervisor: Ing. Miriam Solgajová, PhD.</span></div>
+</div></header>
 <div class="wrap">
-
-  <p style="color:var(--muted);font-size:.92rem;margin:0 0 1.4rem">
-    Delivery rules of thumb: never more than <b>three spoken points per slide</b>, let the
-    data slides (9–13) carry the weight, and speak the <span class="punch">highlighted lines</span> slowly.
-  </p>
-
-  <!-- TIME BUDGET -->
-  <table class="budget">
-    <thead><tr><th>Section</th><th>Slides</th><th style="text-align:right">Time</th></tr></thead>
-    <tbody>
-      <tr><td>Opening</td><td>1</td><td class="tm">0:15</td></tr>
-      <tr><td>Introduction</td><td>2–3</td><td class="tm">2:00</td></tr>
-      <tr><td>Objectives</td><td>4–5</td><td class="tm">1:30</td></tr>
-      <tr><td>Materials &amp; Methods</td><td>6–8</td><td class="tm">2:45</td></tr>
-      <tr><td>Results</td><td>9–13</td><td class="tm">5:30</td></tr>
-      <tr><td>Conclusions</td><td>14</td><td class="tm">1:00</td></tr>
-      <tr><td>Recommendations &amp; future work</td><td>15</td><td class="tm">0:45</td></tr>
-      <tr><td>Close</td><td>16–17</td><td class="tm">0:30</td></tr>
-      <tr><td><b>Total</b></td><td></td><td class="tm"><b>≈ 14:15</b> (buffer for questions)</td></tr>
-    </tbody>
-  </table>
-
-  <!-- SECTION 0 -->
-  <h2 class="section"><span class="num">0</span> Opening <span class="time">~15 s</span></h2>
-  <div class="slide">
-    <h3><span class="sn">1</span> Title <span class="t">~15 s</span></h3>
-    <div class="lbl">Show</div>
-    <ul><li>Title, your name, supervisor, 2026.</li></ul>
-    <div class="lbl">Say</div>
-    <ul><li>One sentence only — don't read the title aloud: <span class="say"><em>"My thesis valorises brewer's spent grain in wheat bread using enzyme treatment, particle-size fractionation, and a digital image-analysis tool I built."</em></span></li></ul>
-  </div>
-
-  <!-- SECTION 1 -->
-  <h2 class="section"><span class="num">1</span> Introduction <span class="time">~2 min</span></h2>
-  <p class="goal">Land this: why BSG matters (scale + waste), why bread, and the one obstacle the thesis attacks — the 10–15% sensory ceiling.</p>
-
-  <div class="slide">
-    <h3><span class="sn">2</span> The problem: a valuable by-product, wasted <span class="t">~60 s</span></h3>
-    <div class="lbl">Show</div><ul><li>The three big numbers: 85–90%, 36–39 Mt, 6.4 Mt.</li></ul>
-    <div class="lbl">Say</div>
-    <ul>
-      <li>BSG is the brewing industry's most abundant solid residue — <b>85–90%</b> of it, ~<b>36–39 Mt/year</b> worldwide, <b>6.4 Mt</b> in the EU (~0.2 kg per litre of beer).</li>
-      <li>Mostly landfilled or downgraded to feed — landfilling one tonne releases ~513 kg CO₂-eq — clashing with circular-economy and EU Green Deal goals.</li>
-      <li>Yet it's rich in fibre, protein, minerals and antioxidant phenolics. <span class="say"><em>Recovering it as a food ingredient is both an environmental and a nutritional opportunity.</em></span></li>
-    </ul>
-  </div>
-
-  <div class="slide">
-    <h3><span class="sn">3</span> Why bread, and the central dilemma <span class="t">~60 s</span></h3>
-    <div class="lbl">Show</div><ul><li>Two-column contrast: nutritional upside vs. sensory penalty.</li></ul>
-    <div class="lbl">Say</div>
-    <ul>
-      <li>Bread is the ideal vehicle — high-volume staple; BSG raises fibre and protein, lowers digestible starch.</li>
-      <li><b>But</b> the same fibre competes for water and weakens gluten → lower volume, denser/darker crumb; coarse husk → gritty mouthfeel; released phenolics → bitterness.</li>
-      <li><span class="say"><em>"Acceptance falls sharply once substitution passes about 10–15% — the first quality to fail and the hardest to recover. That ceiling is what this thesis targets."</em></span></li>
-    </ul>
-  </div>
-
-  <!-- SECTION 2 -->
-  <h2 class="section"><span class="num">2</span> Objectives <span class="time">~1.5 min</span></h2>
-  <p class="goal">Land this: the specific unresolved gap, one clear aim, and the three testable hypotheses.</p>
-
-  <div class="slide">
-    <h3><span class="sn">4</span> Research gap and aim <span class="t">~45 s</span></h3>
-    <div class="lbl">Say</div>
-    <ul>
-      <li>Two mitigation strategies exist — <b>xylanase</b> (dissolves arabinoxylan fibre, frees water) and <b>particle-size fractionation</b> (sieving removes coarse husk) — but their relative importance and interaction are unresolved, and crumb structure is rarely measured objectively.</li>
-      <li><b>General aim (one sentence):</b> evaluate how xylanase and fractionation affect the techno-functional, compositional and sensory quality of BSG bread, and build a reproducible image-analysis method — to find a formulation matching a conventional wheat reference.</li>
-    </ul>
-  </div>
-
-  <div class="slide">
-    <h3><span class="sn">5</span> Objectives and hypotheses <span class="t">~45 s</span></h3>
-    <div class="lbl">Say</div>
-    <ul>
-      <li>Don't read all six objectives — group them: <em>"characterise composition and rheology, measure technology and sensory across the design, build and apply BreadScan, then integrate everything to pick the best formulation."</em></li>
-    </ul>
-    <div class="lbl">State the hypotheses clearly (Conclusions answers them)</div>
-    <ul>
-      <li><b>H1</b> — quality declines dose-dependently, threshold near 10–15%.</li>
-      <li><b>H2</b> — enzyme and sieving mitigate via <em>distinct</em> mechanisms and may act synergistically.</li>
-      <li><b>H3</b> — image-analysis crumb metrics correlate with technological and sensory outcomes.</li>
-    </ul>
-  </div>
-
-  <!-- SECTION 3 -->
-  <h2 class="section"><span class="num">3</span> Materials &amp; Methods <span class="time">~2.75 min</span></h2>
-  <p class="goal">Land this: it's a controlled two-batch design, the toolkit is standard and comparable, and BreadScan is your original methodological contribution.</p>
-
-  <div class="slide">
-    <h3><span class="sn">6</span> Experimental design: two comparable batches <span class="t">~60 s</span></h3>
-    <div class="lbl">Say</div>
-    <ul>
-      <li><b>Batch 1 (baseline, 5 breads):</b> control, 10%, 20% BSG, and 10%/20% + 70 ppm xylanase — all unsieved. <em>This is where the problem revealed itself.</em></li>
-      <li><b>Batch 2 (expanded, 9 breads):</b> crosses <b>BSG type</b> (unsieved vs. ≤250 µm fraction) × <b>dose</b> (70 vs. 140 ppm) at 10% and 20%, plus crumb imaging.</li>
-      <li><span class="say"><em>Identical protocols across both batches, so results are directly comparable.</em></span></li>
-    </ul>
-  </div>
-
-  <div class="slide">
-    <h3><span class="sn">7</span> The analytical toolkit <span class="t">~45 s</span></h3>
-    <div class="lbl">Say (fast)</div>
-    <ul>
-      <li>Proximate composition · dough rheology (farinograph/amylograph) · loaf volume &amp; shape · trained sensory panel · BreadScan for crumb.</li>
-      <li><b>Materials in one line:</b> BSG from the Agribiotech micro-malthouse in Nitra (HEINEKEN pale malt), dried and milled; wheat flour T-650; enzyme <b>Pentopan Mono BG</b>, a GH11 endo-1,4-β-xylanase from <em>Aspergillus oryzae</em>.</li>
-    </ul>
-  </div>
-
-  <div class="slide">
-    <h3><span class="sn">8</span> BreadScan: my in-house image-analysis tool <span class="t">~60–70 s</span></h3>
-    <div class="lbl">This is your "wow" slide — slow down</div>
-    <div class="lbl">Say</div>
-    <ul>
-      <li>Standard white-bread image methods fail on BSG crumb: dark and fibre-laden, so pores and matrix have low contrast and particles mimic pores.</li>
-      <li>Browser-based pipeline: acquire + ruler calibration → <b>CLAHE</b> contrast → adaptive (Sauvola-type) thresholding → morphology + connected-component analysis → metrics: <b>2D porosity, cell density, mean cell area</b>.</li>
-      <li><span class="say"><em>"Reproducible, non-destructive, and adapted specifically to this bread type — a methodological contribution of the thesis."</em></span></li>
-    </ul>
-  </div>
-
-  <!-- SECTION 4 -->
-  <h2 class="section"><span class="num">4</span> Results <span class="time">~5.5 min — heart of the talk</span></h2>
-  <p class="goal">Land this: (1) the Batch-1 paradox creates tension, (2) Batch 2 resolves it — fractionation, not enzyme dose, drives sensory, (3) crumb data confirm it objectively, (4) one formulation wins, (5) the headline takeaways.</p>
-
-  <div class="slide">
-    <h3><span class="sn">9</span> Batch 1: the xylanase paradox <span class="t">~75 s</span></h3>
-    <div class="lbl">Show</div><ul><li>Loaf photos: control → 10% → 20% → +enzyme.</li></ul>
-    <div class="lbl">Say</div>
-    <ul>
-      <li>10% is acceptable across composition, technology and sensory; <b>20% shows clear penalties</b> — wet gluten drops 29.0% → 22.5%, dough stiff and inelastic.</li>
-      <li><b>The paradox:</b> xylanase on <em>unsieved</em> BSG raised volume (+6.5% at 10%) <b>but sensory dropped</b> — 76.75 → 65.25 points.</li>
-      <li><span class="say"><em>"No single Batch-1 bread matched the control on both volume and sensory — that's what motivated Batch 2."</em></span></li>
-    </ul>
-  </div>
-
-  <div class="slide">
-    <h3><span class="sn">10</span> Batch 2: fractionation drives sensory quality <span class="t">~75 s</span></h3>
-    <div class="lbl">Show</div><ul><li>Sensory bar chart; point to the acceptance ≈ 70 line.</li></ul>
-    <div class="lbl">Say</div>
-    <ul>
-      <li>Read the pattern, not every bar: <b>10% clusters high, 20% fails regardless</b> of enzyme or sieving.</li>
-      <li><b>140 ppm maximised volume (up to 1050 mL) but not sensory</b> — more enzyme ≠ more acceptance.</li>
-      <li><b>Key contrast:</b> at 10%, the <b>sieved</b> fraction scored 85.0 vs. 81.8 unsieved — <span class="say"><em>sieving is what recovers eating quality.</em></span></li>
-    </ul>
-  </div>
-
-  <div class="slide">
-    <h3><span class="sn">11</span> Crumb structure (BreadScan DIA) <span class="t">~60 s</span></h3>
-    <div class="lbl">Show</div><ul><li>Metrics table + control-vs-10% crumb images.</li></ul>
-    <div class="lbl">Say</div>
-    <ul>
-      <li>Control crumb is open and light — <b>41.5% porosity</b>; all BSG breads fall to <b>16–28%</b>.</li>
-      <li>Among BSG breads, <b>10% fraction + 70 ppm has the highest porosity and cell density.</b></li>
-      <li><span class="say"><em>"The image metrics track both loaf volume and sensory — so BreadScan works as a non-destructive screen"</em></span> (H3 confirmed).</li>
-    </ul>
-  </div>
-
-  <div class="slide">
-    <h3><span class="sn">12</span> The winning formulation <span class="t">~75 s — the climax</span></h3>
-    <div class="lbl">Show</div><ul><li>Winner-vs-control table + sensory comparison (85.0 vs 85.9).</li></ul>
-    <div class="lbl">Say</div>
-    <ul>
-      <li><b>10% sieved BSG (≤250 µm) + 70 ppm xylanase.</b></li>
-      <li>Matches the control on sensory (<b>85.0 vs. 85.9</b>, within one SD, <em>lowest panel variability</em> of the study), approaches it on volume (925 vs. 975 mL), best crumb of the BSG breads.</li>
-      <li>Nutritional bonus: <b>+14% protein, +30% ash</b>.</li>
-      <li><span class="say"><em>"Fractionation plus the original 70 ppm dose achieve together what neither did alone — this resolves the Batch-1 paradox."</em></span></li>
-    </ul>
-  </div>
-
-  <div class="slide">
-    <h3><span class="sn">13</span> Key findings <span class="t">~45 s</span></h3>
-    <div class="lbl">Say — four crisp statements</div>
-    <ul>
-      <li><b>Threshold</b> — 10–15% is the ceiling; 20% fails everywhere.</li>
-      <li><b>Particle size</b> is the decisive sensory lever, not enzyme dose.</li>
-      <li><b>Xylanase</b> is a volume tool — no benefit beyond 70 ppm.</li>
-      <li><b>Winner</b> — 10% sieved + 70 ppm matches the control with a nutritional gain.</li>
-    </ul>
-  </div>
-
-  <!-- SECTION 5 -->
-  <h2 class="section"><span class="num">5</span> Conclusions <span class="time">~1 min</span></h2>
-  <p class="goal">Land this: answer each hypothesis explicitly, then give the single interpretive take-home.</p>
-
-  <div class="slide">
-    <h3><span class="sn">14</span> Conclusions <span class="t">~60 s</span></h3>
-    <div class="lbl">Say — tie back to the hypotheses</div>
-    <ul>
-      <li><b>H1 confirmed</b> — dose-dependent quality loss; 10–15% threshold replicated across two independent panels.</li>
-      <li><b>H2 confirmed</b> — distinct mechanisms: sieving improves sensory, enzyme improves volume; synergy at 10% fraction + 70 ppm.</li>
-      <li><b>H3 confirmed</b> — image-analysis crumb metrics correlate with technological and sensory outcomes.</li>
-      <li><span class="say"><em>Take-home (slowly): "Sensory quality in BSG bread is governed mainly by particle size, not enzyme dose. Xylanase is a complementary volume tool with no benefit beyond 70 ppm at 10% substitution."</em></span></li>
-    </ul>
-  </div>
-
-  <!-- SECTION 6 -->
-  <h2 class="section"><span class="num">6</span> Recommendations &amp; future work <span class="time">~45 s</span></h2>
-  <p class="goal">Land this: you know the study's limits, and there's a clear forward path.</p>
-
-  <div class="slide">
-    <h3><span class="sn">15</span> Recommendations &amp; future work <span class="t">~45 s</span></h3>
-    <div class="lbl">Limitations (honest, brief)</div>
-    <ul><li>Crude-fibre method underestimated soluble fibre released by the enzyme; small panel (n = 8) limited statistical power; volume measured once per bake.</li></ul>
-    <div class="lbl">Future work</div>
-    <ul><li>Soluble/insoluble fibre profiling · larger consumer panel · shelf-life &amp; microbial safety · 3D crumb imaging (micro-CT) · scale-up · extend valorisation to other by-products (e.g. malt rootlets).</li></ul>
-  </div>
-
-  <!-- SECTION 7 -->
-  <h2 class="section"><span class="num">7</span> Close <span class="time">~30 s</span></h2>
-  <div class="slide">
-    <h3><span class="sn">16</span> Closing statement <span class="t">~20 s</span></h3>
-    <div class="lbl">Say</div>
-    <ul><li><span class="say"><em>"A protein-enriched bread that valorises brewery waste and matches conventional wheat bread is achievable — through particle-size optimisation — and BreadScan makes that quality objectively measurable."</em></span></li></ul>
-  </div>
-  <div class="slide">
-    <h3><span class="sn">17</span> Thank you <span class="t">~10 s</span></h3>
-    <div class="lbl">Say</div>
-    <ul><li>Thank supervisor and technicians; invite questions.</li></ul>
-  </div>
-
-  <!-- PREP NOTE -->
-  <div class="note">
-    <p style="margin:.1rem 0 .6rem"><b>Prepare beyond the slides</b></p>
-    <p style="margin:.2rem 0"><b>Anticipated questions:</b> Why 70 ppm and not lower? · Why ≤250 µm specifically? · How is BreadScan validated against a reference method? · Why crude-fibre and not total dietary fibre?</p>
-    <p style="margin:.5rem 0 .1rem"><b>Pacing:</b> slides 9–13 are ~40% of the talk. If running long, compress slides 5, 7 and 15 — never the Results.</p>
-  </div>
-
-  <footer>BSG Thesis · Defense 2026 · Speaker guide generated for rehearsal — content drawn from the thesis abstract, aims and conclusion.</footer>
-
+<p style="color:var(--muted);font-size:.92rem;margin:0 0 1.4rem">Delivery: keep to ~3 spoken points per slide,
+let the data slides (9–13) carry the weight, and speak the highlighted take-home lines slowly.</p>
+<h2 class="section"><span class="num">0</span> Opening <span class="time">~15 s</span></h2>
+<div class="slide">
+ <h3><span class="sn">1</span> Title <span class="t">~15 s</span></h3>
+ <div class="blk"><p class="lbl g">On slide — graphics / tables</p><ul><li>SUA·FBFS + Danube AgriFood + EU &#x27;Funded by&#x27; logos across the top; maroon rule; pink wheat motif on the left.</li></ul></div>
+ <div class="blk"><p class="lbl b">On slide — body text (what to type)</p><div class="body-txt"><ul><li>(Title) Application of Malting and Brewing By-products into Cereal-based Products</li><li>(Subtitle) Enzymatic treatment, particle-size fractionation and digital image analysis of BSG-enriched wheat bread</li><li>Institute of Food Sciences · Faculty of Biotechnology and Food Sciences · SUA in Nitra</li><li>Supervisor: Ing. Miriam Solgajová, PhD. · Author: Lucia Buzzeo · Nitra 2026</li></ul></div></div>
+ <div class="blk"><p class="lbl s">Say — what to address</p><ul><li>One sentence only — don&#x27;t read the title aloud: “My thesis valorises brewer&#x27;s spent grain in wheat bread using enzyme treatment, particle-size fractionation, and a digital image-analysis tool I built.”</li></ul></div>
 </div>
-</body>
-</html>
+<h2 class="section"><span class="num">1</span> Introduction <span class="time">~2 min</span></h2>
+<p class="goal">Land this: why BSG matters (scale + waste), why bread, and the one obstacle the thesis attacks — the 10–15% sensory ceiling.</p>
+<div class="slide">
+ <h3><span class="sn">2</span> Introduction — the problem <span class="t">~60 s</span></h3>
+ <div class="blk"><p class="lbl g">On slide — graphics / tables</p><ul><li>Three maroon stat cards (85–90% · 36–39 Mt · 6.4 Mt); no chart.</li></ul></div>
+ <div class="blk"><p class="lbl b">On slide — body text (what to type)</p><div class="body-txt"><ul><li>85–90% — of all brewery solid waste is brewer&#x27;s spent grain (BSG)</li><li>36–39 Mt — of BSG generated worldwide every year</li><li>6.4 Mt — produced in the EU alone each year</li><li>Today most BSG is landfilled or downgraded to low-value animal feed — at odds with circular-economy and EU sustainability goals. Landfilling one tonne releases ~513 kg CO₂-eq.</li><li>Yet BSG is rich in dietary fibre, protein, minerals and antioxidant phenolics.</li><li>→ Recovering it as a food ingredient is both an environmental and a nutritional opportunity.</li></ul></div></div>
+ <div class="blk"><p class="lbl s">Say — what to address</p><ul><li>BSG is the brewing industry&#x27;s most abundant solid residue — 85–90% of it; ~36–39 Mt/yr worldwide; 6.4 Mt in the EU (~0.2 kg per litre of beer).</li><li>Its usual fate (landfill / feed) clashes with circular-economy goals; landfilling 1 t ≈ 513 kg CO₂-eq.</li><li>But it is nutritionally rich → recovering it as food is both an environmental and nutritional opportunity.</li></ul></div>
+</div>
+<div class="slide">
+ <h3><span class="sn">3</span> Introduction — why bread &amp; the dilemma <span class="t">~60 s</span></h3>
+ <div class="blk"><p class="lbl g">On slide — graphics / tables</p><ul><li>Two columns (green &#x27;upside&#x27; box vs maroon &#x27;penalty&#x27; box); maroon banner at the bottom.</li></ul></div>
+ <div class="blk"><p class="lbl b">On slide — body text (what to type)</p><div class="body-txt"><ul><li>Nutritional upside: + more dietary fibre · + more protein · + less digestible starch · + familiar, high-volume staple</li><li>The sensory penalty: – bitter, astringent taste (freed phenolic acids) · – gritty mouthfeel (coarse husk) · – darker, denser, less springy crumb · – lower loaf volume</li><li>(Banner) Overall acceptance falls sharply once BSG substitution passes ~10–15% — the first quality to fail, and the obstacle this thesis targets.</li></ul></div></div>
+ <div class="blk"><p class="lbl s">Say — what to address</p><ul><li>Bread is the ideal vehicle — high-volume staple; BSG raises fibre and protein, lowers digestible starch.</li><li>But the same fibre competes for water and weakens gluten → lower volume, denser/darker crumb; husk → gritty; phenolics → bitterness.</li><li>Say the ceiling line slowly — it frames the whole thesis.</li></ul></div>
+</div>
+<h2 class="section"><span class="num">2</span> Objectives <span class="time">~1.5 min</span></h2>
+<p class="goal">Land this: the specific unresolved gap, one clear aim, and the three testable hypotheses.</p>
+<div class="slide">
+ <h3><span class="sn">4</span> Objectives — research gap &amp; aim <span class="t">~45 s</span></h3>
+ <div class="blk"><p class="lbl g">On slide — graphics / tables</p><ul><li>Text-only: &#x27;research gap&#x27; paragraph + a maroon-bordered &#x27;General aim&#x27; box.</li></ul></div>
+ <div class="blk"><p class="lbl b">On slide — body text (what to type)</p><div class="body-txt"><ul><li>The research gap: two mitigation strategies exist — xylanase (solubilises arabinoxylan fibre, frees bound water) and particle-size fractionation (sieving removes the coarse, abrasive husk) — but their relative weight and interaction are unresolved, and crumb-structure effects are rarely quantified objectively.</li><li>General aim: Evaluate how xylanase treatment and particle-size fractionation affect the techno-functional, compositional and sensory quality of BSG-enriched wheat bread, and develop a reproducible digital image-analysis method for crumb structure — to identify a formulation matching a conventional wheat reference and support BSG valorisation.</li></ul></div></div>
+ <div class="blk"><p class="lbl s">Say — what to address</p><ul><li>Two levers exist but their relative weight/interaction is unresolved, and crumb structure is rarely measured objectively.</li><li>State the general aim in one sentence.</li></ul></div>
+</div>
+<div class="slide">
+ <h3><span class="sn">5</span> Objectives — objectives &amp; hypotheses <span class="t">~45 s</span></h3>
+ <div class="blk"><p class="lbl g">On slide — graphics / tables</p><ul><li>Two columns: numbered objectives (left) and three H-boxes (right).</li></ul></div>
+ <div class="blk"><p class="lbl b">On slide — body text (what to type)</p><div class="body-txt"><ul><li>Specific objectives: 1. Characterise composition &amp; wet gluten · 2. Assess dough rheology (farinograph, amylograph) · 3. Technology across BSG level × dose × particle size · 4. Sensory acceptance &amp; inclusion threshold · 5. Build &amp; apply BreadScan (crumb DIA) · 6. Integrate all data → best formulation</li><li>H1 — Dose-dependent quality loss, with a threshold near 10–15%.</li><li>H2 — Enzyme and fractionation mitigate via distinct mechanisms and may act synergistically.</li><li>H3 — DIA crumb metrics correlate with technological and sensory outcomes.</li></ul></div></div>
+ <div class="blk"><p class="lbl s">Say — what to address</p><ul><li>Don&#x27;t read all six objectives — group them (characterise → measure → build BreadScan → integrate).</li><li>State the three hypotheses clearly; the Conclusions slide answers them one by one.</li></ul></div>
+</div>
+<h2 class="section"><span class="num">3</span> Materials &amp; Methods <span class="time">~2.75 min</span></h2>
+<p class="goal">Land this: a controlled two-batch design, a standard/comparable toolkit, and BreadScan as your original methodological contribution.</p>
+<div class="slide">
+ <h3><span class="sn">6</span> Materials &amp; Methods — experimental design <span class="t">~60 s</span></h3>
+ <div class="blk"><p class="lbl g">On slide — graphics / tables</p><ul><li>Two stacked boxes (Batch 1 blue, Batch 2 green) + maroon comparability banner. No chart.</li></ul></div>
+ <div class="blk"><p class="lbl b">On slide — body text (what to type)</p><div class="body-txt"><ul><li>Batch 1 — Baseline (5 breads): Control · 10% · 20% BSG · 10%/20% BSG + 70 ppm xylanase (all unsieved).</li><li>Batch 2 — Expanded (9 breads): BSG type (unsieved vs ≤250 µm fraction) × dose (70 vs 140 ppm) at 10% &amp; 20%, + wheat control + BreadScan DIA.</li><li>(Banner) Identical baking, fermentation and analytical protocols across both batches → results directly comparable.</li></ul></div></div>
+ <div class="blk"><p class="lbl s">Say — what to address</p><ul><li>Batch 1 established the problem; Batch 2 tested the two mitigation levers (fractionation, higher dose).</li><li>Stress: identical protocols → directly comparable.</li></ul></div>
+</div>
+<div class="slide">
+ <h3><span class="sn">7</span> Materials &amp; Methods — analytical toolkit <span class="t">~45 s</span></h3>
+ <div class="blk"><p class="lbl g">On slide — graphics / tables</p><ul><li>Styled table (blue header) &#x27;Parameter | Principle/method&#x27;; small materials line above.</li></ul></div>
+ <div class="blk"><p class="lbl b">On slide — body text (what to type)</p><div class="body-txt"><ul><li>Materials line: BSG from the Agribiotech micro-malthouse, Nitra (HEINEKEN pale malt), dried 60 °C, milled, sieved ≤250 µm; wheat flour T-650; enzyme Pentopan Mono BG — GH11 endo-1,4-β-xylanase (A. oryzae); analyses at FBFS, SUA Nitra.</li><li>Table rows: Proximate composition = AOAC (925.10 / 923.03 / 979.09 ×6.25 / 962.09) · Wet gluten = AACC 38-12.02 · Dough rheology = farinograph &amp; amylograph (Batch 1) · Loaf volume &amp; shape = rapeseed displacement; H/W by caliper · Sensory = trained panel n=8 (weighted 5-point, 100-pt) · Crumb structure = BreadScan DIA (n=3).</li></ul></div></div>
+ <div class="blk"><p class="lbl s">Say — what to address</p><ul><li>Read the toolkit fast — one breath.</li><li>Give the materials one-liner (BSG origin, flour type, the specific enzyme).</li></ul></div>
+</div>
+<div class="slide">
+ <h3><span class="sn">8</span> Materials &amp; Methods — BreadScan <span class="t">~60–70 s</span></h3>
+ <div class="blk"><p class="lbl g">On slide — graphics / tables</p><ul><li>Pipeline step chips; BreadScan calibration image (left), segmentation stages (top), metric output (bottom); own-tool caption.</li></ul></div>
+ <div class="blk"><p class="lbl b">On slide — body text (what to type)</p><div class="body-txt"><ul><li>Pipeline: Acquire + calibrate → CLAHE / raw → Threshold (Sauvola / peak-mode) → Morphology + CCA → Metrics.</li><li>Built for the dark, fibre-laden BSG crumb, where standard white-bread methods fail.</li><li>Outputs: 2D porosity, cell density, mean cell area. Browser-based, reproducible &amp; non-destructive.</li><li>→ A methodological contribution of this thesis.</li></ul></div></div>
+ <div class="blk"><p class="lbl s">Say — what to address</p><ul><li>This is your &#x27;wow&#x27; slide — slow down.</li><li>Explain why white-bread methods fail on dark crumb, then the pipeline, then the outputs.</li><li>Call it a methodological contribution.</li></ul></div>
+</div>
+<h2 class="section"><span class="num">4</span> Results <span class="time">~5.5 min — heart of the talk</span></h2>
+<p class="goal">Land this: (1) the Batch-1 paradox creates tension, (2) Batch 2 resolves it — fractionation, not enzyme dose, drives sensory, (3) crumb data confirm it objectively, (4) one formulation wins, (5) the headline takeaways.</p>
+<div class="slide">
+ <h3><span class="sn">9</span> Results — Batch 1: the xylanase paradox <span class="t">~75 s</span></h3>
+ <div class="blk"><p class="lbl g">On slide — graphics / tables</p><ul><li>Batch-1 loaf photo (5 loaves) left; bullets right; maroon paradox banner.</li></ul></div>
+ <div class="blk"><p class="lbl b">On slide — body text (what to type)</p><div class="body-txt"><ul><li>10% BSG — acceptable on composition, technology and sensory.</li><li>20% BSG — clear penalties; wet gluten falls 29.0% → 22.5%; stiff, inelastic dough.</li><li>Xylanase (70 ppm) on unsieved BSG: volume ↑ (+6.5% at 10%) but sensory ↓ (76.75 → 65.25).</li><li>(Banner) No single Batch-1 bread matched the control on both volume and sensory → motivates Batch 2.</li></ul></div></div>
+ <div class="blk"><p class="lbl s">Say — what to address</p><ul><li>10% acceptable; 20% clear penalties (wet gluten 29.0→22.5%).</li><li>The paradox: xylanase on unsieved BSG raises volume but drops sensory.</li><li>Punchline: no Batch-1 bread matched control on both → that&#x27;s why Batch 2.</li></ul></div>
+</div>
+<div class="slide">
+ <h3><span class="sn">10</span> Results — Batch 2: fractionation drives sensory <span class="t">~75 s</span></h3>
+ <div class="blk"><p class="lbl g">On slide — graphics / tables</p><ul><li>Native bar chart of 9 formulations (control grey, winner gold, fractions green, unsieved blue), acceptance labels; note bullets right.</li></ul></div>
+ <div class="blk"><p class="lbl b">On slide — body text (what to type)</p><div class="body-txt"><ul><li>Chart: Overall sensory acceptance — Control 85.9 · 10%U·70 81.8 · 20%U·70 56.8 · 10%F·70 85.0 · 20%F·70 62.5 · 10%U·140 78.6 · 20%U·140 69.3 · 10%F·140 72.4 · 20%F·140 66.7. (U = unsieved, F = ≤250 µm, number = ppm.)</li><li>10% cluster high; 20% fails regardless of enzyme or sieving.</li><li>140 ppm maximised volume (up to 1050 mL) but not sensory.</li><li>At 10%, sieved (85.0) beats unsieved (81.8) — sieving recovers eating quality.</li></ul></div></div>
+ <div class="blk"><p class="lbl s">Say — what to address</p><ul><li>Read the pattern, not every bar: 10% cluster high, 20% fails regardless.</li><li>140 ppm maxed volume, not sensory.</li><li>Key contrast: sieved 85.0 vs unsieved 81.8 at 10% → sieving recovers eating quality.</li></ul></div>
+</div>
+<div class="slide">
+ <h3><span class="sn">11</span> Results — crumb structure (BreadScan DIA) <span class="t">~60 s</span></h3>
+ <div class="blk"><p class="lbl g">On slide — graphics / tables</p><ul><li>Crumb-metrics table (blue header) + two crumb photos (control vs 10% BSG); insight box.</li></ul></div>
+ <div class="blk"><p class="lbl b">On slide — body text (what to type)</p><div class="body-txt"><ul><li>Table (2D porosity % · cell density · mean cell area): Control 41.5 / 11.0 / 3.76 · 10% fraction + 70 ppm 27.8 / 8.1 / 3.44 · 10% unsieved + 70 ppm 25.7 / 7.6 / 3.38 · 20% formulations 19–23 / 6.0–9.7 / 2.3–3.0.</li><li>Porosity drops from 41.5% (control) to 16–28% for all BSG breads.</li><li>10% fraction + 70 ppm = highest porosity &amp; cell density among BSG breads.</li><li>DIA metrics track both loaf volume and sensory → BreadScan validated as a non-destructive screen.</li></ul></div></div>
+ <div class="blk"><p class="lbl s">Say — what to address</p><ul><li>Control 41.5% porosity → BSG 16–28%.</li><li>10% fraction + 70 ppm best among BSG breads.</li><li>Validation line: metrics track volume &amp; sensory (H3 confirmed).</li></ul></div>
+</div>
+<div class="slide">
+ <h3><span class="sn">12</span> Results — the winning formulation <span class="t">~75 s — climax</span></h3>
+ <div class="blk"><p class="lbl g">On slide — graphics / tables</p><ul><li>Gold headline banner; winner-vs-control table; sensory 85.0 vs 85.9 compare box; maroon resolution banner.</li></ul></div>
+ <div class="blk"><p class="lbl b">On slide — body text (what to type)</p><div class="body-txt"><ul><li>Headline: 10% sieved BSG (≤250 µm) + 70 ppm xylanase — matches the wheat control, with a nutritional bonus.</li><li>Table (Winner | Control): Sensory 85.0 | 85.9 · CV 9.4% (lowest) | — · Loaf volume 925 mL | 975 mL · 2D porosity 27.8% (best of BSG) | 41.5% · Protein +14% vs control · Ash +30% vs control.</li><li>(Banner) Fractionation + the original 70 ppm dose achieve together what neither did alone — resolving the Batch-1 paradox.</li></ul></div></div>
+ <div class="blk"><p class="lbl s">Say — what to address</p><ul><li>Name it: 10% sieved BSG + 70 ppm.</li><li>Matches control sensory (85.0 vs 85.9, lowest CV), approaches volume, best BSG crumb, +14% protein/+30% ash.</li><li>Resolve the tension: fractionation + 70 ppm did what neither did alone.</li></ul></div>
+</div>
+<div class="slide">
+ <h3><span class="sn">13</span> Results — key findings <span class="t">~45 s</span></h3>
+ <div class="blk"><p class="lbl g">On slide — graphics / tables</p><ul><li>Three finding rows (label + text) + maroon winner banner. No chart.</li></ul></div>
+ <div class="blk"><p class="lbl b">On slide — body text (what to type)</p><div class="body-txt"><ul><li>THRESHOLD — 10–15% is the ceiling; 20% fails on composition, volume and sensory (two panels).</li><li>PARTICLE SIZE — the decisive sensory lever: sieving ≤250 µm restores acceptance; enzyme dose does not.</li><li>XYLANASE — a volume tool only; no benefit beyond 70 ppm; 140 ppm can worsen sensory.</li><li>(Banner) Winner: 10% sieved BSG + 70 ppm — sensory 85.0 vs 85.9, +14% protein / +30% ash. BreadScan validated.</li></ul></div></div>
+ <div class="blk"><p class="lbl s">Say — what to address</p><ul><li>Deliver as four crisp statements — threshold, particle size, xylanase, winner.</li><li>This is your verbal summary before conclusions.</li></ul></div>
+</div>
+<h2 class="section"><span class="num">5</span> Conclusions <span class="time">~1 min</span></h2>
+<p class="goal">Land this: answer each hypothesis explicitly, then give the single interpretive take-home.</p>
+<div class="slide">
+ <h3><span class="sn">14</span> Conclusions <span class="t">~60 s</span></h3>
+ <div class="blk"><p class="lbl g">On slide — graphics / tables</p><ul><li>Three green H-boxes (H1/H2/H3 confirmed) + maroon take-home banner.</li></ul></div>
+ <div class="blk"><p class="lbl b">On slide — body text (what to type)</p><div class="body-txt"><ul><li>H1 CONFIRMED — dose-dependent quality loss; 10–15% threshold replicated across two independent panels.</li><li>H2 CONFIRMED — distinct mechanisms: sieving improves sensory, enzyme improves volume; synergy at 10% fraction + 70 ppm.</li><li>H3 CONFIRMED — DIA crumb metrics correlate with technological and sensory outcomes.</li><li>(Take-home) Sensory quality is governed mainly by PARTICLE SIZE, not enzyme dose. Xylanase is a complementary volume tool — no benefit beyond 70 ppm at 10% substitution.</li></ul></div></div>
+ <div class="blk"><p class="lbl s">Say — what to address</p><ul><li>Tie back to the three hypotheses, one line each.</li><li>Deliver the take-home slowly — it&#x27;s the thesis&#x27;s core message.</li></ul></div>
+</div>
+<h2 class="section"><span class="num">6</span> Recommendations &amp; future work <span class="time">~45 s</span></h2>
+<p class="goal">Land this: you know the study&#x27;s limits, and there&#x27;s a clear forward path.</p>
+<div class="slide">
+ <h3><span class="sn">15</span> Recommendations &amp; future work <span class="t">~45 s</span></h3>
+ <div class="blk"><p class="lbl g">On slide — graphics / tables</p><ul><li>Two columns: &#x27;Limitations&#x27; (maroon) and &#x27;Recommendations / future work&#x27; (green). No chart.</li></ul></div>
+ <div class="blk"><p class="lbl b">On slide — body text (what to type)</p><div class="body-txt"><ul><li>Limitations: crude-fibre near the gravimetric detection limit; soluble fibre released by xylanase not captured; small panel (n = 8); loaf volume measured once per bake.</li><li>Recommendations / future work: deploy 10% sieved BSG + 70 ppm as a functional fibre/protein bread; soluble/insoluble fibre profiling + assay of free phenolics &amp; reducing sugars; larger panel with formal statistics (ANOVA/Tukey); instrumental texture &amp; shelf-life; 3D crumb imaging (micro-CT); cross-device BreadScan validation; extend to other by-products.</li></ul></div></div>
+ <div class="blk"><p class="lbl s">Say — what to address</p><ul><li>State limitations honestly and briefly.</li><li>Give the forward path — note the ANOVA/Tukey point (it answers an opponent question).</li></ul></div>
+</div>
+<h2 class="section"><span class="num">7</span> Close <span class="time">~15 s</span></h2>
+<div class="slide">
+ <h3><span class="sn">16</span> Thank you <span class="t">~15 s</span></h3>
+ <div class="blk"><p class="lbl g">On slide — graphics / tables</p><ul><li>Big centred &#x27;Thank you for your attention&#x27;; wheat + Danube logos; acknowledgement line.</li></ul></div>
+ <div class="blk"><p class="lbl b">On slide — body text (what to type)</p><div class="body-txt"><ul><li>Thank you for your attention</li><li>With thanks to my supervisor Ing. Miriam Solgajová, PhD., and the laboratory technicians.</li><li>Lucia Buzzeo · ybuzzeo@uniag.sk</li></ul></div></div>
+ <div class="blk"><p class="lbl s">Say — what to address</p><ul><li>Thank supervisor and technicians; invite questions.</li></ul></div>
+</div>
+<div class="note">
+ <p style="margin:.1rem 0 .6rem"><b>Prepare beyond the slides</b></p>
+ <p style="margin:.2rem 0"><b>Anticipated questions:</b> Why 70 ppm and not lower? · Why ≤250 µm specifically? · How is BreadScan validated against a reference method / other devices? · Why crude-fibre and not total dietary fibre? · Why no ANOVA/Tukey? (See the opponent-answers document.)</p>
+ <p style="margin:.5rem 0 .1rem"><b>Pacing:</b> slides 9–13 are ~40% of the talk. If running long, compress slides 5, 7 and 15 — never the Results.</p>
+</div>
+<footer>BSG Thesis · Defense 2026 · On-slide text mirrors Buzzeo_Defense_2026_SUA.pptx; content drawn from the thesis.</footer>
+</div></body></html>
